@@ -84,16 +84,19 @@ sub _process {
 	foreach my $image_hr (@{$images_ar}) {
 		$self->{'tags'}->put(
 			['b', 'li'],
+
 			['b', 'input'],
 			['a', 'type', 'checkbox'],
 			['a', 'id', 'image_'.$image_hr->{'id'}],
 			['e', 'input'],
+
 			['b', 'label'],
 			['a', 'for', 'image_'.$image_hr->{'id'}],
 			['b', 'img'],
 			['a', 'src', $image_hr->{'url'}],
 			['e', 'img'],
 			['e', 'label'],
+
 			['e', 'li'],
 		);
 	}
